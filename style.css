@@ -53,6 +53,29 @@ main p{
     position: relative;
 }
 
+.nft-image{
+    position: relative;
+    overflow: hidden;
+}
+.card-view{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 0.6);
+    border-radius: 10px;
+    display: none;
+}
+
+.card-view img{
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .eth, .time{
     display: flex;
@@ -101,4 +124,9 @@ main h2:hover{
 .user em:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
+}
+
+
+.nft-image:hover .card-view{
+    display: block;
 }
