@@ -63,7 +63,7 @@ main p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: hsl(178, 100%, 50%, 0.6);
+    background-color: hsl(178, 100%, 50%, 0.5);
     border-radius: 10px;
     display: none;
 }
@@ -71,7 +71,6 @@ main p{
 .card-view img{
     width: 50px;
     position: absolute;
-    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -126,7 +125,35 @@ main h2:hover{
     cursor: pointer;
 }
 
-
 .nft-image:hover .card-view{
     display: block;
+}
+@media only screen and (max-height: 520px){
+
+    main{
+        max-width: 400px;
+        padding-bottom: 5px;
+    }
+
+    .nft-image{
+        width: 40%;
+    }
+    .nft-conteudo{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .nft-text{
+        display: inline;
+
+    }
+    .nft-conteudo h2{
+        font-size: 1.2rem;
+        text-align: right;
+    }
+    .nft-conteudo p{
+        text-align: right;
+    }
+    .info{
+        padding: 5px 0px;
+    }
 }
